@@ -40,7 +40,7 @@ points(powerData$datetime, powerData$Sub_metering_2,
 points(powerData$datetime, powerData$Sub_metering_3,
        col = "blue", type = "l")
 legend("topright", col = c("black", "red", "blue"), 
-       legend = names(powerData[6:8]), lty = 1)
+       legend = names(powerData[6:8]), bty = "n")
 
 #Plot the global reactive power as a line plot.
 plot(powerData$datetime, powerData$Global_reactive_power, type = "l",
